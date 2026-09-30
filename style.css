@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #2e8b57, #a8d5ba);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #2d3436;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+#heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #1a202c;
+    padding: 15px 0;
+}
+
+.balance-container {
+    text-align: center;
+    background: linear-gradient(to right, #a8d5ba, #6b8e23);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.005);
+    padding: 25px;
+    margin-bottom: 20px;
+
+}
+
+#rupess {
+    margin-top: 5px;
+    color: black;
+}
+
+.balance-container h2 {
+    font-size: large;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.income {
+    background-color: white;
+    border-radius: 15px;
+    color: darkgreen;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.005);
+    padding: 24px;
+    transition: transform 0.2s ease;
+}
+
+.summary h3 {
+    margin-bottom: 5px;
+}
+
+.expense {
+    background-color: white;
+    border-radius: 15px;
+    color: darkred;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.005);
+    padding: 24px;
+    transition: transform 0.2s ease;
+}
+
+.income:hover,
+.expense:hover {
+    transform: translateY(-2px);
+}
+
+.income p,
+.expense p {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.transaction-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#transaction-list {
+    list-style: none;
+    max-height: 500px;
+    /* overflow auto help us to give a scroll feature when content is overflow the container height */
+    overflow-y: auto;
+    padding-right: 8px;
+    flex-grow: 1;
+}
+
+#transaction-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* track is the background of the scrollbar*/
+#transaction-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+
+}
+
+/* thumbe is the draggble  part of the scrollbar */
+#transaction-list::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: gainsboro
+}
+
+#transaction-list::-webkit-scrollbar-thumb:hover {
+    background-color: #a0aec0;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border-right: 5px solid;
+    background-color: #fff;
+    padding: 10px;
+    margin: 8px;
+    transition: all linear;
+    font-weight: bold;
+    border:  0.5px solid#cdd2d8;
+}
+.transaction:hover{
+  transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.inc {
+    border-right: 5px solid green;
+}
+
+.exp {
+    border-right: 5px solid red;
+}
+
+.remove{
+    font-size: 10px;
+    color:#1a202c;
+    font-weight: 800;
+    padding-left: 20px;
+}
+
+.remove:hover{
+    cursor: pointer;  
+}
+
+.form-container form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeaea;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.form-container h2 {
+    color: #1a202c;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 200;
+    font-size: smaller;
+}
+
+#descri,
+#amount {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+}
+
+button {
+    background-color: #2e8b57;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 100px;
+    width: 95%;
+    margin-left: 5px;
+
+}
+
+@media screen and (width < 450px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (width < 400px){
+    .summary{
+         display: grid;
+        grid-template-columns: auto;
+    }
+}
