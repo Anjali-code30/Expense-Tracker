@@ -29,8 +29,8 @@ Add transactions, see your balance update instantly, and never lose your data, e
 
 <h3>⭐ If you like this project, give it a star!</h3>
 
-<img src = "<img width="1366" height="768" alt="Screenshot (17)" src="https://github.com/user-attachments/assets/a9605d1a-b739-479c-bec8-175256288bf3" />
+"<img width="1366" height="768" alt="Screenshot (17)" src="https://github.com/user-attachments/assets/a9605d1a-b739-479c-bec8-175256288bf3" />
 "/>
-<img src = "<img width="1366" height="768" alt="Screenshot (15)" src="https://github.com/user-attachments/assets/accbf84d-31f4-40b1-ac99-b1491bcb2f93" />
+ "<img width="1366" height="768" alt="Screenshot (15)" src="https://github.com/user-attachments/assets/accbf84d-31f4-40b1-ac99-b1491bcb2f93" />
 "
 
