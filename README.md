@@ -10,6 +10,7 @@ Add transactions, see your balance update instantly, and never lose your data, e
 <li>📊 Live tracking: total income, total expense and current balance update automatically</li>
 <li>💾 Saved in localStorage: your data stays even after you refresh or close the browser</li>
 <li>📱 Fully responsive: works smoothly on mobile, tablet and desktop</li>
+<li>It also have scrolling feature when we add alot expenses</li>
 </ul>
 
 <h2>🛠️ Built With</h2>
